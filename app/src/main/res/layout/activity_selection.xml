@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.co.android.tictactoe.SelectionActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player A's Name"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"/>
+
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/playerX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="8"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player B's Name"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"/>
+
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/playerO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="8"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grid Size"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:drawableStart="@drawable/ic_apps_black_24dp"
+            android:drawableLeft="@drawable/ic_apps_black_24dp"/>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/grid_three"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="3"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/grid_five"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="5"
+            android:layout_marginLeft="7dp"
+            android:textSize="16sp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/button_background"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rounds"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:drawableStart="@drawable/ic_apps_black_24dp"
+            android:drawableLeft="@drawable/ic_apps_black_24dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/multi_player_one_round"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:text="1"
+            android:background="@drawable/button_background"/>
+
+        <Button
+        android:id="@+id/multi_player_three_rounds"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="3"
+        android:layout_marginLeft="7dp"
+        android:textSize="16sp"
+        android:layout_marginStart="7dp"
+        android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/multi_player_five_rounds"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="5"
+            android:layout_marginLeft="7dp"
+            android:textSize="16sp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/multi_player_seven_rounds"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="7"
+            android:layout_marginLeft="7dp"
+            android:textSize="16sp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/multi_player_ten_rounds"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="10"
+            android:layout_marginLeft="7dp"
+            android:textSize="16sp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/button_background"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_game"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+        android:drawableStart="@drawable/ic_play_arrow_black_24dp"
+        android:background="@drawable/button_background"/>
+
+
+</LinearLayout>
+
