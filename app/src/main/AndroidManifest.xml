@@ -36,8 +36,8 @@
         <activity android:name=".MultiPlayerGrid3Activity" />
         <activity
             android:name=".PlaceholderActivity"
-            android:theme="@style/SplashTheme"></activity>
-        <activity android:name=".CreditsActivity"></activity>
+            android:theme="@style/SplashTheme">
+        </activity>
     </application>
 
 </manifest>
