@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">@android:color/holo_blue_dark</color>
     <color name="colorPrimaryDark">#0288d1</color>
-    <color name="colorAccent">#448aff</color>
+    <color name="colorAccent">#fff</color>
     <color name="crossColor">@android:color/holo_red_light</color>
     <color name="O_color">@android:color/holo_green_light</color>
     <color name="test">#000</color>

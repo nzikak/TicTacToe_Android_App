@@ -24,4 +24,8 @@
     <string name="soon">Coming Soon</string>
     <string name="single_player">Single Player</string>
     <string name="multi_player">MultiPlayer</string>
+    <string name="stats">Stats</string>
+    <string name="new_game">New Game</string>
+    <string name="exit">Exit</string>
+    <string name="options">Options</string>
 </resources>

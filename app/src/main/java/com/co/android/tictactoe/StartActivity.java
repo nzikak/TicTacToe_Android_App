@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import static com.co.android.tictactoe.R.id.credits;
+
 public class StartActivity extends AppCompatActivity {
 
     @Override
@@ -17,7 +19,6 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
 
         Button newGame = (Button) findViewById(R.id.new_game);
-        Button credits = (Button) findViewById(R.id.credits);
         Button options = (Button) findViewById(R.id.options);
         Button stats = (Button) findViewById(R.id.stats);
         Button exit = (Button) findViewById(R.id.exit);
@@ -29,14 +30,6 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
-        });
-
-        credits.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(StartActivity.this, CreditsActivity.class);
-                startActivity(intent);
-            }
         });
 
         options.setOnClickListener(new View.OnClickListener() {

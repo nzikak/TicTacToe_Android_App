@@ -7,7 +7,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
+import android.widget.Toast;
 
 
 public class SelectionActivity extends AppCompatActivity {
@@ -47,6 +47,7 @@ public class SelectionActivity extends AppCompatActivity {
                 gridSize = 3;
                 gridThree.setBackgroundResource(R.drawable.selected_button);
                 gridFive.setBackgroundResource(R.drawable.button_background);
+                Toast.makeText(SelectionActivity.this, "Match three rows to win", Toast.LENGTH_SHORT).show();
             }
 
         });
@@ -57,6 +58,7 @@ public class SelectionActivity extends AppCompatActivity {
                 gridSize = 5;
                 gridFive.setBackgroundResource(R.drawable.selected_button);
                 gridThree.setBackgroundResource(R.drawable.button_background);
+                Toast.makeText(SelectionActivity.this, "Match four rows to win", Toast.LENGTH_SHORT).show();
             }
 
         });
