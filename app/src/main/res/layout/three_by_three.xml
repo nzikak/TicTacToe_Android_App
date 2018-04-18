@@ -7,13 +7,13 @@
 
 
     <RelativeLayout
-        android:id="@+id/grid3_playerContainer"
+        android:id="@+id/grid3_scoreContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#66ffffff">
 
         <TextView
-            android:id="@+id/grid3_playerA"
+            android:id="@+id/grid3_playerOneName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
@@ -28,7 +28,7 @@
             android:id="@+id/colon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=":"
+            android:text="@string/colon"
             android:textSize="32sp"
             android:layout_margin="8dp"
             android:textStyle="bold"
@@ -38,10 +38,10 @@
             />
 
         <TextView
-            android:id="@+id/grid3_playerA_score"
+            android:id="@+id/grid3_playerOne_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
+            android:text="@string/zero"
             android:textSize="32sp"
             android:layout_margin="10dp"
             android:textColor="@android:color/white"
@@ -53,10 +53,10 @@
 
 
         <TextView
-            android:id="@+id/grid3_playerB_score"
+            android:id="@+id/grid3_playerTwo_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
+            android:text="@string/zero"
             android:textSize="32sp"
             android:layout_margin="10dp"
             android:textAlignment="center"
@@ -66,7 +66,7 @@
             />
 
         <TextView
-            android:id="@+id/grid3_playerB"
+            android:id="@+id/grid3_playerTwoName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
@@ -178,7 +178,7 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/winning"
+        android:id="@+id/grid3_winner_container"
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
@@ -188,7 +188,7 @@
         android:visibility="gone">
 
         <TextView
-            android:id="@+id/player_won"
+            android:id="@+id/grid3_winner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
@@ -196,10 +196,10 @@
             android:layout_centerHorizontal="true"/>
 
         <Button
-            android:id="@+id/menu"
+            android:id="@+id/grid3_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Menu"
+            android:text="@string/menu"
             android:layout_alignParentBottom="true"
             android:layout_margin="5dp"
             android:padding="5dp"
@@ -207,10 +207,10 @@
             android:background="@drawable/button_background"/>
 
         <Button
-            android:id="@+id/next_round"
+            android:id="@+id/grid3_next_round"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Next Round"
+            android:text="@string/next_round"
             android:textSize="12sp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"

@@ -5,13 +5,13 @@
     android:background="@drawable/woody">
 
     <RelativeLayout
-        android:id="@+id/grid5_playerContainer"
+        android:id="@+id/grid5_scoreContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#66ffffff">
 
         <TextView
-            android:id="@+id/grid5_playerA"
+            android:id="@+id/grid5_playerOneName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
@@ -26,7 +26,7 @@
             android:id="@+id/colon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=":"
+            android:text="@string/colon"
             android:textSize="32sp"
             android:layout_margin="8dp"
             android:textStyle="bold"
@@ -36,10 +36,10 @@
             />
 
         <TextView
-            android:id="@+id/grid5_playerA_score"
+            android:id="@+id/grid5_playerOne_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
+            android:text="@string/zero"
             android:textSize="32sp"
             android:layout_margin="10dp"
             android:textColor="@android:color/white"
@@ -51,10 +51,10 @@
 
 
         <TextView
-            android:id="@+id/grid5_playerB_score"
+            android:id="@+id/grid5_playerTwo_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
+            android:text="@string/zero"
             android:textSize="32sp"
             android:layout_margin="10dp"
             android:textAlignment="center"
@@ -64,7 +64,7 @@
             />
 
         <TextView
-            android:id="@+id/grid5_playerB"
+            android:id="@+id/grid5_playerTwoName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
@@ -320,7 +320,7 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/grid5_winning"
+        android:id="@+id/grid5_winner_container"
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
@@ -330,7 +330,7 @@
         android:visibility="gone">
 
         <TextView
-            android:id="@+id/grid5_player_won"
+            android:id="@+id/grid5_winner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
@@ -341,7 +341,7 @@
             android:id="@+id/grid5_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Menu"
+            android:text="@string/menu"
             android:layout_alignParentBottom="true"
             android:layout_margin="5dp"
             android:padding="5dp"
@@ -352,7 +352,7 @@
             android:id="@+id/grid5_next_round"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Next Round"
+            android:text="@string/next_round"
             android:textSize="12sp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"

@@ -1,5 +1,6 @@
 package com.co.android.tictactoe;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +17,6 @@ public class PlayerActivity extends AppCompatActivity {
 
         Button singlePlayer = (Button) findViewById(R.id.single_player);
         Button multiPlayer = (Button) findViewById(R.id.multi_player);
-        Button challenge = (Button) findViewById(R.id.challenge);
 
         multiPlayer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +30,7 @@ public class PlayerActivity extends AppCompatActivity {
         singlePlayer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PlayerActivity.this, SinglePlayerSelectionActivity.class);
+                Intent intent = new Intent(PlayerActivity.this, PlaceholderActivity.class);
                 startActivity(intent);
             }
 

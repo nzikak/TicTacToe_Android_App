@@ -18,20 +18,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
         <activity
             android:name=".StartActivity"
-            android:theme="@style/SplashTheme"></activity>
+            android:theme="@style/SplashTheme" />
         <activity
             android:name=".PlayerActivity"
-            android:theme="@style/SplashTheme"></activity>
+            android:theme="@style/SplashTheme" />
         <activity
             android:name=".SelectionActivity"
-            android:theme="@style/SplashTheme"></activity>
+            android:theme="@style/SplashTheme" />
         <activity
             android:name=".SinglePlayerSelectionActivity"
+            android:theme="@style/SplashTheme" />
+        <activity android:name=".SinglePlayerActivity" />
+        <activity android:name=".SinglePlayerGrid5Activity" />
+        <activity android:name=".MultiPlayerGrid5Activity" />
+        <activity android:name=".MultiPlayerGrid3Activity" />
+        <activity
+            android:name=".PlaceholderActivity"
             android:theme="@style/SplashTheme"></activity>
-        <activity android:name=".SinglePlayerActivity"></activity>
+        <activity android:name=".CreditsActivity"></activity>
     </application>
 
 </manifest>

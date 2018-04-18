@@ -17,7 +17,7 @@
             android:id="@+id/single_player"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Single Player"
+            android:text="@string/single_player"
             android:background="@drawable/button_background"
             android:padding="5dp"
             android:drawableStart="@drawable/ic_person_black_24dp"
@@ -29,7 +29,7 @@
             android:id="@+id/multi_player"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="MultiPlayer"
+            android:text="@string/multi_player"
             android:background="@drawable/button_background"
             android:padding="5dp"
             android:drawableStart="@drawable/ic_group_black_24dp"
@@ -38,18 +38,6 @@
             android:layout_marginBottom="5dp"
             />
 
-        <Button
-            android:id="@+id/challenge"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="Challenge"
-            android:background="@drawable/button_background"
-            android:padding="5dp"
-            android:drawableStart="@drawable/ic_stars_black_24dp"
-            android:drawableLeft="@drawable/ic_stars_black_24dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            />
         </LinearLayout>
     </RelativeLayout>
 

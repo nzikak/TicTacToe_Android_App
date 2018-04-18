@@ -25,18 +25,6 @@
         android:layout_marginBottom="5dp"
         />
 
-    <Button
-        android:id="@+id/continue_game"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Continue"
-        android:background="@drawable/button_background"
-        android:padding="5dp"
-        android:drawableStart="@drawable/ic_play_circle_outline_black_24dp"
-        android:drawableLeft="@drawable/ic_play_circle_outline_black_24dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        />
 
     <Button
         android:id="@+id/options"
@@ -63,6 +51,19 @@
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         />
+
+        <Button
+            android:id="@+id/credits"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Credits"
+            android:background="@drawable/button_background"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_play_circle_outline_black_24dp"
+            android:drawableLeft="@drawable/ic_play_circle_outline_black_24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
 
     <Button
         android:id="@+id/exit"

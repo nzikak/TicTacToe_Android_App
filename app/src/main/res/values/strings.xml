@@ -1,3 +1,27 @@
-<resources>
+<resources xmlns:x="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Tic Tac Toe</string>
+
+
+    <string name="draw">It\'s a draw</string>
+    <string name="winner"><xliff:g example="John" id="player_name">%s</xliff:g> won</string>
+    <string name="player_one_name">Player One\'s Name</string>
+    <string name="player_two_name">Player Two\'s Name</string>
+    <string name="grid_size">Grid Size</string>
+    <string name="colon">:</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="three">3</string>
+    <string name="five">5</string>
+    <string name="seven">7</string>
+    <string name="ten">10</string>
+    <string name="start_game">Start Game</string>
+    <string name="rounds">Rounds</string>
+    <string name="name">Name (E.g John)</string>
+    <string name="menu">Menu</string>
+    <string name="next_round">Next Round</string>
+    <string name="x">X</string>
+    <string name="o">O</string>
+    <string name="soon">Coming Soon</string>
+    <string name="single_player">Single Player</string>
+    <string name="multi_player">MultiPlayer</string>
 </resources>

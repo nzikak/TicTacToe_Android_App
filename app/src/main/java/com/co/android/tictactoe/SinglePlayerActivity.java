@@ -64,8 +64,8 @@ public class SinglePlayerActivity extends AppCompatActivity {
         if (gridSize == 3) {
             setContentView(R.layout.three_by_three);
             LinearLayout grid3Layout = (LinearLayout) findViewById(R.id.grid3_layout);
-            grid3_playerA = (TextView) findViewById(R.id.grid3_playerA);
-            grid3_playerB = (TextView) findViewById(R.id.grid3_playerB);
+            grid3_playerA = (TextView) findViewById(R.id.grid3_playerOneName);
+            grid3_playerB = (TextView) findViewById(R.id.grid3_playerTwoName);
             Animation animation = AnimationUtils.loadAnimation(this, R.anim.slide_in);
             animation.setDuration(1500);
             grid3Layout.startAnimation(animation);
@@ -187,8 +187,8 @@ public class SinglePlayerActivity extends AppCompatActivity {
         if (gridSize == 5) {
             setContentView(R.layout.five_by_five);
             LinearLayout grid5Layout = (LinearLayout) findViewById(R.id.grid5_layout);
-            grid5_playerA = (TextView) findViewById(R.id.grid5_playerA);
-            grid5_playerB = (TextView) findViewById(R.id.grid5_playerB);
+            grid5_playerA = (TextView) findViewById(R.id.grid5_playerOneName);
+            grid5_playerB = (TextView) findViewById(R.id.grid5_playerTwoName);
             Animation animation = AnimationUtils.loadAnimation(this, R.anim.slide_in);
             animation.setDuration(1500);
             grid5Layout.startAnimation(animation);

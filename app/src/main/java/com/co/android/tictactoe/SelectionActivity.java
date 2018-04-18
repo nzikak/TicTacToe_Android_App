@@ -1,8 +1,6 @@
 package com.co.android.tictactoe;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,17 +8,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
+
 public class SelectionActivity extends AppCompatActivity {
 
-    private  int gridSize = 3;
+    private int gridSize = 3;
     private int roundSelection = 3;
-    private String playerX_Name;
-    private String playerO_Name;
+    private String playerOne_Name;
+    private String playerTwo_Name;
     private Button gridFive;
     private Button gridThree;
     private Button startGame;
-    private EditText playerX;
-    private EditText playerO;
+    private EditText playerOne;
+    private EditText playerTwo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +34,8 @@ public class SelectionActivity extends AppCompatActivity {
         final Button sevenRounds = (Button) findViewById(R.id.multi_player_seven_rounds);
         final Button tenRounds = (Button) findViewById(R.id.multi_player_ten_rounds);
 
-        playerX = (EditText) findViewById(R.id.playerX);
-        playerO = (EditText) findViewById(R.id.playerO);
+        playerOne = (EditText) findViewById(R.id.playerOne);
+        playerTwo = (EditText) findViewById(R.id.playerTwo);
         gridThree = (Button) findViewById(R.id.grid_three);
         gridFive = (Button) findViewById(R.id.grid_five);
         startGame = (Button) findViewById(R.id.start_game);
@@ -133,14 +133,24 @@ public class SelectionActivity extends AppCompatActivity {
         startGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                playerX_Name = playerX.getText().toString();
-                playerO_Name = playerO.getText().toString();
-                if (!TextUtils.isEmpty(playerX_Name) && !TextUtils.isEmpty(playerO_Name)) {
-                    Intent intent = new Intent(SelectionActivity.this, MainActivity.class);
-                    intent.putExtra("playerX", playerX_Name);
-                    intent.putExtra("playerO", playerO_Name);
-                    intent.putExtra("gridSize", gridSize);
-                    startActivity(intent);
+                playerOne_Name = playerOne.getText().toString();
+                playerTwo_Name = playerTwo.getText().toString();
+                if (gridSize == 3) {
+                    if (!TextUtils.isEmpty(playerOne_Name) && !TextUtils.isEmpty(playerTwo_Name)) {
+                        Intent intent = new Intent(SelectionActivity.this, MultiPlayerGrid3Activity.class);
+                        intent.putExtra("playerOne", playerOne_Name);
+                        intent.putExtra("playerTwo", playerTwo_Name);
+                        intent.putExtra("roundSelection", roundSelection);
+                        startActivity(intent);
+                    }
+                } else if (gridSize == 5) {
+                    if (!TextUtils.isEmpty(playerOne_Name) && !TextUtils.isEmpty(playerTwo_Name)) {
+                        Intent intent = new Intent(SelectionActivity.this, MultiPlayerGrid5Activity.class);
+                        intent.putExtra("playerOne", playerOne_Name);
+                        intent.putExtra("playerTwo", playerTwo_Name);
+                        intent.putExtra("roundSelection", roundSelection);
+                        startActivity(intent);
+                    }
                 }
             }
 
