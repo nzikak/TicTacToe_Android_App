@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import static com.co.android.tictactoe.R.id.credits;
 
 public class StartActivity extends AppCompatActivity {
 
